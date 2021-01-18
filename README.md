@@ -47,8 +47,8 @@ There was 222 5 star reviews out of 613 total Vine Reviews. There was 30,543 5 s
 
 36% of Vine reviews were 5 stars whereas 47% of non Vine reviews were 5 stars.
 
-![](resources/Theater_Outcomes_Vs_Launch.png)
-![](resources/Theater_Outcomes_Vs_Launch.png)
+![](percent_reviews.PNG)
+
 
 
 ## Summary: 
