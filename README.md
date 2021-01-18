@@ -16,7 +16,7 @@ First we filtered so we only showed reivews with votes over 20 so we showed revi
 ![](vine_votes.PNG)
 
 Then we filtered the vine dataframe to only show reviews where helpful votes were more than 50% of total votes. 
-![](vine_votes.PNG)
+![](votes_filtered.PNG)
 
 Then we separated out the filtered dataframe to create a dataframe for Vine reviews and a dataframe for non Vine reviews.
 ![](vine_yes.PNG)
