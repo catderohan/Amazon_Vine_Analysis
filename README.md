@@ -2,11 +2,54 @@
 
 ## Overview of the analysis: Explain the purpose of this analysis.
 
+The purpose of this analysis was to analyze Amaazon reviews that were written by members of the paid Amazon Vine progrma. First we extracted the data, then transformed the data into four different tables. We created a customers dataframe, prodcuts data frame, review ID dataframe, and a vine dataframe. 
+
+![](create_dataframe.PNG)
+![](customer_dataframe.PNG)
+![](products_dataframe.PNG)
+![](review_dataframe.PNG)
+![](vine_dataframe.PNG)
+
+Then we connected to an AWS RDS instance and uploaded the dataframes into PGAdmin. Then we used pySpark functions to perform an analysis on the data to calculate how many percentage of reviews were Vine/Non Vine as well as how many were 5 star reviews that were Vine or not Vine. We performed this analysis to see if there was any bias toward favorbale reviews from Vine members.
+
+First we filtered so we only showed reivews with votes over 20. 
+![](vine_votes.PNG)
+
+Then we filtered the vine dataframe to only show reviews where helpful votes were more than 50% of total votes. 
+![](vine_votes.PNG)
+
+Then we separated out the filtered dataframe to create a dataframe for Vine reviews and a dataframe for non Vine reviews.
+![](vine_yes.PNG)
+![](vine_no.PNG)
+
+Laslty, we ready to perform calculation on the dataset to look at percentages of vine and non vine 5 star reviews. 
+
+
 ## Results: Using bulleted lists and images of DataFrames as support, address the following questions:
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+**How many Vine reviews and non-Vine reviews were there?**
+There was 613 Vine reviews and 64,968 non Vine reviews.
+
+![](vine_total_reviews.PNG)
+![](non_vine_reviews.PNG)
 
 
-## Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+**How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?**
+There was 222 5 star reviews out of 613 total Vine Reviews. There was 30,543 5 star reviews of out 64,968 non Vine reviews.
+
+![](vine_fivestar_reviews.PNG)
+![](non_vine_5star_reviews.PNG)
+
+
+**What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?**
+36% of Vine reviews were 5 stars whereas 47% of non Vine reviews were 5 stars.
+
+![](resources/Theater_Outcomes_Vs_Launch.png)
+![](resources/Theater_Outcomes_Vs_Launch.png)
+
+
+## Summary: 
+
+I do not think there is any positivity bias for reviews in the Vine program.  Only 36% of Vine reviews were 5 stars, where as 47% of non Vine reviews were 5 stars. Since Vine 5 star reviews had a smaller percentage of 5 stars than non Vine, I do not see any bias towards Vine (paid) reviews. If Vine (paid) reviews were majority 5 stars (over 70%) or a higher percentage than non Vine then I would state there could be biased with the paid reviews. But with only 36% of Vine review being 5 star and it is less than non Vine, I do not see any bias.  
+
+An additional analysis we could do in the dataset would be to see if vine/non vine reviews had any correlation with verified purchases. I'd also perform an analysis to see if vine or non vine reviews had more total votes. 
