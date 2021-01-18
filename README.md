@@ -28,6 +28,7 @@ Now we were ready to perform calculation on the dataset to look at percentages o
 ## Results: 
 
 **How many Vine reviews and non-Vine reviews were there?**
+
 There was 613 Vine reviews and 64,968 non Vine reviews.
 
 ![](vine_total_reviews.PNG)
@@ -35,6 +36,7 @@ There was 613 Vine reviews and 64,968 non Vine reviews.
 
 
 **How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?**
+
 There was 222 5 star reviews out of 613 total Vine Reviews. There was 30,543 5 star reviews of out 64,968 non Vine reviews.
 
 ![](vine_fivestar_reviews.PNG)
@@ -42,6 +44,7 @@ There was 222 5 star reviews out of 613 total Vine Reviews. There was 30,543 5 s
 
 
 **What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?**
+
 36% of Vine reviews were 5 stars whereas 47% of non Vine reviews were 5 stars.
 
 ![](resources/Theater_Outcomes_Vs_Launch.png)
