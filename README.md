@@ -18,11 +18,11 @@ First we filtered so we only showed reivews with votes over 20 so we showed revi
 Then we filtered the vine dataframe to only show reviews where helpful votes were more than 50% of total votes. 
 ![](votes_filtered.PNG)
 
-Then we separated out the filtered dataframe to create a dataframe for Vine reviews and a dataframe for non Vine reviews.
+Lastly we separated out the filtered dataframe to create a dataframe for Vine reviews and a dataframe for non Vine reviews.
 ![](vine_yes.PNG)
 ![](vine_no.PNG)
 
-Lastly, we were ready to perform calculation on the dataset to look at percentages of vine and non vine 5 star reviews to see if there was any bias toward favorbale reviews from Vine members.
+Now we were ready to perform calculation on the dataset to look at percentages of vine and non vine 5 star reviews to see if there was any bias toward favorbale reviews from Vine members.
 
 
 ## Results: 
