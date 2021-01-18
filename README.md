@@ -12,7 +12,7 @@ The purpose of this analysis was to analyze Amaazon reviews that were written by
 
 Then we connected to an AWS RDS instance and uploaded the dataframes into PGAdmin. Then we used pySpark functions to perform an analysis on the data to calculate how many percentage of reviews were Vine/Non Vine as well as how many were 5 star reviews that were Vine or not Vine. We performed this analysis to see if there was any bias toward favorbale reviews from Vine members.
 
-First we filtered so we only showed reivews with votes over 20. 
+First we filtered so we only showed reivews with votes over 20 so we showed reviews that were more likely to be helpful. 
 ![](vine_votes.PNG)
 
 Then we filtered the vine dataframe to only show reviews where helpful votes were more than 50% of total votes. 
