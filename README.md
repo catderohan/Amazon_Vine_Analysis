@@ -1,6 +1,6 @@
 # Amazon_Vine_Analysis
 
-## Overview of the analysis: Explain the purpose of this analysis.
+## Overview of the analysis: 
 
 The purpose of this analysis was to analyze Amaazon reviews that were written by members of the paid Amazon Vine progrma. First we extracted the data, then transformed the data into four different tables. We created a customers dataframe, prodcuts data frame, review ID dataframe, and a vine dataframe. 
 
